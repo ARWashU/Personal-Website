@@ -372,7 +372,7 @@ span {
     opacity: 0;
     transform: translateY(40px);
     animation: fadeGalleryIn 1.5s ease forwards;
-    animation-delay: 17s;
+    animation-delay: 20s;
   }
   
   .about-gallery img {
@@ -441,7 +441,7 @@ span {
   .social-icons {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.5rem; /* add space *below* icons now */
+    margin-bottom: 1.5rem;
     gap: 2rem;
   }
   
