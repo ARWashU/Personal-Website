@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anand - Contact</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Anand</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section id="contact" class="contact">
+  <div class="fade-in-left">
+    <div id="typewriter-message"></div>
+    <div class="social-icons fade-in-icons">
+      <a href="https://www.linkedin.com/in/anand-ramabadran-148981226/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/ARWashU" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/anandramabadran/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+<script>
+  const message = "Thank you for viewing my portfolio. Look forward to hearing from you!";
+  const typeTarget = document.getElementById("typewriter-message");
+  let i = 0;
+
+  function typeWriterEffect() {
+    if (i < message.length) {
+      typeTarget.innerHTML += message.charAt(i);
+      i++;
+      setTimeout(typeWriterEffect, 40); // typing speed
+    }
+  }
+
+  window.addEventListener('load', typeWriterEffect);
+</script>
+
+</body>
+</html>

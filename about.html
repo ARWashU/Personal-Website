@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anand - About</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Anand</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="resume.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section id="interests" class="interests full-center">
+  <div id="typewriter" class="fade-in"></div>
+  <div class="about-gallery">
+    <img src="./images/IMG_1405.jpg" alt="Concert">
+    <img src="./images/IMG_9503.jpg" alt="Lifting">
+    <img src="./images/IMG_1590.JPG" alt="Tunnel">
+    <img src="./images/IMG_1702.JPG" alt="Fam">
+    <img src="./images/IMG_2024.JPG" alt="Sunset">
+    <img src="./images/IMG_1682.jpg" alt="Snow">
+    <img src="./images/IMG_4649.jpg" alt="Cardinals">
+    <img src="./images/IMG_1893.jpg" alt="Cardinals">
+  </div>
+</section>
+
+<script src="script.js"></script>
+<script>
+  const text = `I am a Sophomore at Washington University in St. Louis studying CS and Business with a concentration in Business Analytics. I am passionate about the intersection of finance and data science. In my free time, I love to work out, play basketball, hike, and play card games. Feel free to contact me at a.ramabadran@wustl.edu. Here are some flicks from sophomore year.`;
+
+  const el = document.getElementById('typewriter');
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      el.innerHTML += text[i] === '\n' ? '<br>' : text[i];
+      i++;
+      setTimeout(typeWriter, 40);
+    }
+  }
+
+  window.addEventListener('load', typeWriter);
+</script>
+
+</body>
+</html>
