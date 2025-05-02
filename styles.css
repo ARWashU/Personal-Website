@@ -372,7 +372,7 @@ span {
     opacity: 0;
     transform: translateY(40px);
     animation: fadeGalleryIn 1.5s ease forwards;
-    animation-delay: 20s;
+    animation-delay: 15s;
   }
   
   .about-gallery img {
